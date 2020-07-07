@@ -1,5 +1,6 @@
 class Ball
   def bounce(height, bounce, window)
-    -1
+    return -1 if bounce >= 1
+    1
   end
 end
