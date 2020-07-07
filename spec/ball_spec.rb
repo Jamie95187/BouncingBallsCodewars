@@ -20,6 +20,10 @@ describe 'ball' do
       expect(ball.bounce(3, 0.5, 1.4)).to eq 3
     end
 
+    it('should return 3') do
+      expect(ball.bounce(3, 0.5, 0.7)).to eq 5
+    end
+
   end
 
 end
