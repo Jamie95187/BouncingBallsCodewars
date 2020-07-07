@@ -10,6 +10,7 @@ describe 'ball' do
       expect(ball.bounce(0, 0.5, 1)).to eq -1
       expect(ball.bounce(1, 0.66, 2)).to eq -1
       expect(ball.bounce(3, 1, 1)).to eq -1
+      expect(ball.bounce(5, -1, 1.5)).to eq -1
     end
 
     it('should return 1') do
