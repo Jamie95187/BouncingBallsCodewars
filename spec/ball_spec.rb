@@ -7,6 +7,7 @@ describe 'ball' do
   describe 'bounce' do
 
     it('should return -1') do
+      expect(ball.bounce(0, 0.5, 1)).to eq -1
       expect(ball.bounce(3, 1, 1)).to eq -1
     end
 
