@@ -1,8 +1,11 @@
 class Ball
   def bounce(height, bounce, window)
     return -1 if bounce >= 1 || height <= 0 || height <= window
-    return 1 if height*bounce <= window
-    return 3 if height*bounce*bounce <= window
-    5
+    bounces = 0
+    while height*bounce >= window do
+      bounces += 1
+      height = height*bounce
+    end
+    1+2*bounces
   end
 end
